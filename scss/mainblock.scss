@@ -1,0 +1,121 @@
+.mainblock {
+   position: relative;
+   min-height: 100vh;
+   text-align: center;
+   // .mainblock__content
+   &__content {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      span {
+         display: inline-block;
+         width: 106px;
+         height: 3px;
+         background-color: #ffffff;
+         margin: 0px 0px 40px 0px;
+      }
+   }
+   // .mainblock_content-1
+   &__content-1 {
+      flex: 0 1 44vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   // .mainblock_content-1_1
+   &__content-1_1 {
+   }
+   // .mainblock_content-2
+   &__content-2 {
+   }
+   // .mainblock_logo
+   &_logo {
+      img {
+         padding: 30px 0px 20px 0px;
+      }
+   }
+   // .mainblock__title
+   &__title {
+      font-size: 34px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #ffffff;
+      padding: 0px 0px 6px 0px;
+      @media (max-width:425px) {
+         font-size: 28px;
+      }
+   }
+   // .mainblock__subtitle
+   &__subtitle {
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0.16em;
+      color: #ffffff;
+      padding: 0px 0px 48px 0px;
+      @media (max-width:425px) {
+         font-size: 22px;
+         line-height: 32px;
+         padding: 0px 0px 20px 0px;
+      }
+   }
+   // .mainblock__btn
+   &__btn {
+      font-size: 16px;
+      line-height: 53px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+
+      display: block;
+      width: 188px;
+      height: 55px;
+      border: 1px solid #ffffff;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         color: #202020;
+         background-color: rgba(255, 255, 255, 0.452);
+      }
+   }
+   // .mainblock__arrow
+   &__arrow {
+      display: inline-block;
+      width: 60px;
+      img {
+         margin: 40px 0px 10px 0px;
+      }
+      &:hover img{
+         animation-name: arrow;
+         animation-duration: 0.6s;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+         animation-timing-function: linear;
+      }
+      @keyframes arrow {
+         0% {
+            transform: translate(0px, 0px);
+         }
+         100% {
+            transform: translate(0px, -20px);
+         }
+      }
+   }
+
+   // .mainblock__img
+   &__img {
+      overflow: hidden;
+      img {
+         object-fit: cover;
+         z-index: -2;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+   }
+}

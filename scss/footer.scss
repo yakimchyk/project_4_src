@@ -1,0 +1,52 @@
+.footer {
+   margin-top: auto;
+   background-color: #3c3c3c;
+   padding: 48px 0px;
+   @media (max-width: 767px) {
+      padding: 28px 0px;
+   }
+   // .footer__logo
+   &__logo {
+      text-align: center;
+      margin-bottom: 40px;
+      @media (max-width: 767px) {
+         margin-bottom: 20px;
+      }
+   }
+   // .footer__links
+   &__links {
+      text-align: center;
+      margin-bottom: 34px;
+      @media (max-width: 767px) {
+         margin-bottom: 24px;
+      }
+      a {
+         font-size: 14px;
+         line-height: 1.2;
+         font-weight: 400;
+         color: #a4a4a4;
+         margin: 0px 11px;
+      }
+   }
+   // .footer__copy
+   &__copy {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #6c6c6c;
+   }
+   // .footer__streloshka
+   &__streloshka {
+      position: absolute;
+      width: 40px;
+      right: 0;
+      transform: translate(0px, -100px);
+      margin: 0px 12px;
+      cursor: pointer;
+      @media (max-width: 767px) {
+         width: 30px;
+         transform: translate(0px, -70px);
+      }
+   }
+}
