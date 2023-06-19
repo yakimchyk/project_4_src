@@ -24,24 +24,3 @@ if (menuLinks.length > 0) {
       }
    }
 }
-
-
-/* $('.filter__item').click(function(event) {
-      var i =$(this).data('filter');
-   if (i==1) {
-      $('portfolio__collumn').show();
-   }else{
-      $('portfolio__collumn').hide();
-      $('portfolio__collumn.a_'+i).show();
-   }
-   $('.filter__item').removeClass('active');
-   $(this).addClass('active');
-
-   return false;
-}); */
-
-
-/*
-import Swiper, { Navigation, Pagination } from 'swiper';
-const swiper = new Swiper();
-*/
